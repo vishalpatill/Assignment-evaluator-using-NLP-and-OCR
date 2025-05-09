@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Evaluation Results</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .result { margin-top: 20px; }
+        h2 { color: #333; }
+        .score { font-size: 1.2em; font-weight: bold; color: #5a5a5a; }
+        .highlight { color: #ff6347; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Assignment Evaluation Results</h1>
+
+    <div class="result">
+        <h2>Evaluation Breakdown</h2>
+        <p><strong>Keyword Match: </strong> {{ keyword_match_percentage }}%</p>
+        <p><strong>Grammar Score: </strong> {{ grammar_score }}%</p>
+        <p><strong>Answer Length Score: </strong> {{ answer_length_score }}%</p>
+        <h3>Final Score: <span class="score">{{ final_score }}</span>/100</h3>
+
+        <h3>Suggestions for Improvement:</h3>
+        <ul>
+            <li><strong>Keyword Match:</strong> Try to include more relevant terms from the model answer.</li>
+            <li><strong>Grammar:</strong> Review grammar, especially punctuation and sentence structure.</li>
+            <li><strong>Answer Length:</strong> Your answer length is within the acceptable range, but keep an eye on staying within 10-20 words of the model's answer length.</li>
+        </ul>
+    </div>
+</body>
+</html>
